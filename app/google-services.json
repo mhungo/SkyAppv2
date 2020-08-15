@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "800933632371",
+    "firebase_url": "https://skycall-c4e0e.firebaseio.com",
+    "project_id": "skycall-c4e0e",
+    "storage_bucket": "skycall-c4e0e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:800933632371:android:9900b1661f34420429cd06",
+        "android_client_info": {
+          "package_name": "com.example.skyapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "800933632371-q91cjfhgsa9cbc796ekhaogaqrumanrk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTCoM-YYrXZwuC025Hhm5xVhybK2sXQcU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "800933632371-q91cjfhgsa9cbc796ekhaogaqrumanrk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
