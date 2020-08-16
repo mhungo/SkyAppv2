@@ -178,7 +178,7 @@ public class ProfileActivity extends AppCompatActivity {
                                                                 if(task.isSuccessful())
                                                                 {
                                                                     friendRequestRef.child(receiverUserID).child(senderUserId)
-                                                                            .child("request_type").setValue("received")
+                                                                            .removeValue()
                                                                             .addOnCompleteListener(new OnCompleteListener<Void>() {
                                                                                 @Override
                                                                                 public void onComplete(@NonNull Task<Void> task) {
@@ -210,8 +210,8 @@ public class ProfileActivity extends AppCompatActivity {
                     public void onComplete(@NonNull Task<Void> task) {
                         if(task.isSuccessful())
                         {
-                            friendRequestRef.child(senderUserId).child(receiverUserID)
-                                    .child("request_type").setValue("received")
+                            friendRequestRef.child(receiverUserID).child(senderUserId)
+                                    .removeValue()
                                     .addOnCompleteListener(new OnCompleteListener<Void>() {
                                         @Override
                                         public void onComplete(@NonNull Task<Void> task) {
@@ -236,7 +236,7 @@ public class ProfileActivity extends AppCompatActivity {
                         if(task.isSuccessful())
                         {
                             friendRequestRef.child(receiverUserID).child(senderUserId)
-                                    .child("request_type").setValue("sent")
+                                    .child("request_type").setValue("received")
                                     .addOnCompleteListener(new OnCompleteListener<Void>() {
                                         @Override
                                         public void onComplete(@NonNull Task<Void> task) {
